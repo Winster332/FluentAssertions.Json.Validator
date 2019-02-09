@@ -1,0 +1,7 @@
+
+language: csharp
+solution: FluentAssertions.Json.Validator.sln
+install:
+  - nuget restore FluentAssertions.Json.Validator.sln
+script:
+  - msbuild /p:Configuration=Release FluentAssertions.Json.Validator.sln
